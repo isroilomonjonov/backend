@@ -9,7 +9,7 @@ import { createServer } from "node:http";
 const router = createRouter();
 
 router.get("/", ({ response }) => {
-  sendJson(response, { message: "hello" });
+  sendJson(response, { message: "helloo" });
 });
 
 const server = createServer(createRequestListener(router.routes));
